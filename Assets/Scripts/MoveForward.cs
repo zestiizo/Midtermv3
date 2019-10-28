@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    [SerializeField] float speed = 40;
+    [SerializeField] float waterPerSecond = 5;
+    public GameObject water;
+    bool canShoot = true;
+
     void Start()
     {
         
@@ -13,9 +16,15 @@ public class MoveForward : MonoBehaviour
     
     void Update()
     {
-       //gameObject.transform.position = transform.position + Camera.main.transform.forward * 2;
-       //Rigidbody rb = gameObject.GetComponent<Rigidbody>();
-       //rb.velocity = Camera.main.transform.forward * 40;
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        Instantiate(water, transform.position, transform.rotation);
+        canShoot = false;
+
+        Invoke("EnableWater", 1 / waterPerSecond);
     }
+
+    void EnableWater()
+    {
+        canShoot = true;
+    }
+
 }

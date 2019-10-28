@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
+  water: {fileID: 8766766789880076088}
 --- !u!54 &6654740181024216844
 Rigidbody:
   m_ObjectHideFlags: 0
