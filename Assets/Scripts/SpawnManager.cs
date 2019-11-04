@@ -18,31 +18,31 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("SpawnRandomGoodPlant", goodstartDelay, goodspawnInterval);
         InvokeRepeating("SpawnRandomBadPlant", badstartDelay, badspawnInterval);
-        
+
     }
 
-    
+
     void Update()
     {
-        
+
     }
 
 
     void SpawnRandomGoodPlant()
     {
-        xPos = Random.Range(-20, 35);
-        zPos = Random.Range(-32, 22);
+        xPos = Random.Range(-30, 30);
+        zPos = Random.Range(-30, 30);
         int goodplantIndex = Random.Range(0, goodplantPrefabs.Length);
         Vector3 spawnPos = new Vector3(xPos, 0, zPos);
-        
+
         Instantiate(goodplantPrefabs[goodplantIndex], spawnPos, goodplantPrefabs[goodplantIndex].transform.rotation);
-        
+
     }
 
     void SpawnRandomBadPlant()
     {
-        xPos = Random.Range(-20, 35);
-        zPos = Random.Range(-32, 22);
+        xPos = Random.Range(-30, 30);
+        zPos = Random.Range(-30, 30);
         int badplantIndex = Random.Range(0, badplantPrefabs.Length);
         Vector3 spawnPos = new Vector3(xPos, 0, zPos);
 

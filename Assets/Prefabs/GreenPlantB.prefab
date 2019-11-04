@@ -89,10 +89,10 @@ GameObject:
   - component: {fileID: 6747563494497336898}
   - component: {fileID: 6747563494512978658}
   - component: {fileID: 4093982554624152331}
-  - component: {fileID: 6664710969805374771}
+  - component: {fileID: 5649886738140355884}
   m_Layer: 0
-  m_Name: Plant_h_01
-  m_TagString: Untagged
+  m_Name: GreenPlantB
+  m_TagString: GoodPlant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,7 +154,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7521136, y: 0.5375674, z: 0.6987146}
   m_Center: {x: -0.005198916, y: 0.19061847, z: 0.15064274}
---- !u!114 &6664710969805374771
+--- !u!114 &5649886738140355884
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,9 +163,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6747563494497821282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd908b27617e4904f9139c66b4f46ce5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3eafe2917cdc87644958055ae4a01c30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splashParticle: {fileID: 0}
+  scoreValue: 1
 --- !u!1 &6747563494497821284
 GameObject:
   m_ObjectHideFlags: 0

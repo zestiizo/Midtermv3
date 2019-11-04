@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 5112699025630820432}
   - component: {fileID: 5112699025644793072}
   - component: {fileID: 6408980028045307371}
-  - component: {fileID: 4761038124478215892}
+  - component: {fileID: 2106996993121661349}
   m_Layer: 0
-  m_Name: Grass_b_03
-  m_TagString: Untagged
+  m_Name: BadGrassA
+  m_TagString: BadPlant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.19001403, y: 0.48929715, z: 0.24950112}
   m_Center: {x: 0.02796318, y: 0.2553513, z: 0.09131982}
---- !u!114 &4761038124478215892
+--- !u!114 &2106996993121661349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80,7 +80,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5112699025630585968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd908b27617e4904f9139c66b4f46ce5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3eafe2917cdc87644958055ae4a01c30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5112699025630585970

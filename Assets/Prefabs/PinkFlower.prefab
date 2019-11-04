@@ -256,10 +256,10 @@ GameObject:
   - component: {fileID: 2375559592990992383}
   - component: {fileID: 2375559593003660127}
   - component: {fileID: 6807994369285361440}
-  - component: {fileID: -41515135246553749}
+  - component: {fileID: 3350391836509512401}
   m_Layer: 0
-  m_Name: Flower_h_b_01
-  m_TagString: Untagged
+  m_Name: PinkFlower
+  m_TagString: GoodPlant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -321,7 +321,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.29508752, y: 0.34544054, z: 0.37396353}
   m_Center: {x: 0.012457004, y: 0.19975543, z: 0.02773842}
---- !u!114 &-41515135246553749
+--- !u!114 &3350391836509512401
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,6 +330,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2375559592990505951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd908b27617e4904f9139c66b4f46ce5, type: 3}
+  m_Script: {fileID: 11500000, guid: 3eafe2917cdc87644958055ae4a01c30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splashParticle: {fileID: 0}
+  scoreValue: 1

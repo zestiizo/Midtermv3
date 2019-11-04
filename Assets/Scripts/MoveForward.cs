@@ -4,27 +4,25 @@ using UnityEngine;
 
 public class MoveForward : MonoBehaviour
 {
-    [SerializeField] float waterPerSecond = 5;
-    public GameObject water;
-    bool canShoot = true;
+    
+    [SerializeField] GameObject water;
+    
 
     void Start()
     {
+
+    }
+
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(water, transform.position, transform.rotation);
+        }
+
         
     }
 
-    
-    void Update()
-    {
-        Instantiate(water, transform.position, transform.rotation);
-        canShoot = false;
-
-        Invoke("EnableWater", 1 / waterPerSecond);
-    }
-
-    void EnableWater()
-    {
-        canShoot = true;
-    }
-
+   
 }

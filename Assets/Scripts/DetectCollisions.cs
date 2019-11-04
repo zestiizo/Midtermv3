@@ -4,21 +4,38 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+    
+    PlayerController playerController;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        GameObject playerControllerObject = GameObject.FindWithTag("Player");
+        if(playerControllerObject != null)
+        {
+            playerController = playerControllerObject.GetComponent<PlayerController>();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
-        Destroy(other.gameObject);
+        if (gameObject.CompareTag("GoodPlant"))
+        {
+          
+            Destroy(gameObject);
+            playerController.UpdateScoreG();
+            playerController.Splash();
+            Destroy(other.gameObject);
+            
+            
+        }
+        else if (gameObject.CompareTag("BadPlant"))
+        {
+            Destroy(gameObject);
+            playerController.UpdateScoreB();
+            playerController.Splash();
+            Destroy(other.gameObject);
+        }
+        
     }
 }
